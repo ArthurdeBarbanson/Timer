@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #04405d url("img/water-5521696_1920.jpg") no-repeat ;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 40px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container h2,
+.container h3{
+    text-align: center;
+    font-size: 5em;
+    color: #000c18;
+    text-shadow: 1px 1px 2px #eee;
+
+    
+}
+.countdown{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-content: center;
+    /*flex-direction: column;*/
+
+}
+.countdown div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #000c18;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.countdown div:before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #558d9e;
+    color: #000c18;
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.countdown #days:before,
+.countdown #daysBest:before{
+    content: 'jour';
+}
+
+.countdown #hours:before,
+.countdown #hoursBest:before{
+    content: 'heure';
+}
+.countdown #minutes:before,
+.countdown #minutesBest:before{
+    content: 'minute';
+}
+.countdown #seconds:before,
+.countdown #secondsBest:before{
+    content: 'seconde';
+}
+
+#stop{
+    text-transform: uppercase;
+    /*width: 100px;*/
+    /*height: 100px;*/
+    margin-right:  auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color: #0A3763;
+    padding: 10px 20px;
+    border-radius: 2%;
+    border: #000c18 15px solid;
+    font-size: 5em;
+    /*line-height: 35px;*/
+    font-weight: 900;
+}
+

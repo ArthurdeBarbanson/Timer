@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h2>Last time !</h2>
+        <div class="countdown">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+        </div>
+        <button type="submit" id="stop">restart</button>
+
+        <h3>Best time :</h3>
+        <div class="countdown">
+            <div id="daysBest">NA</div>
+            <div id="hoursBest">NA</div>
+            <div id="minutesBest">NA</div>
+            <div id="secondsBest">NA</div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('app.js') }}"></script>
+
+{% endblock %}
